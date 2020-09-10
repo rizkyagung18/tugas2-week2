@@ -11,7 +11,7 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
         return "Data harus Array"
     }
 
-    let hasil = dataArray.filter(item => item >= nilaiAwal && item <= nilaiAkhir)
+    let hasil = dataArray.filter(item => item > nilaiAwal && item < nilaiAkhir)
 
     return hasil.sort((a, b) => a - b)
 }
