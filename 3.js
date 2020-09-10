@@ -4,7 +4,7 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     }
 
     if (Array.isArray(dataArray)) {
-        if(dataArray.length <= 5) {
+        if(dataArray.length < 5) {
             return "Jumlah angka dalam dataArray harus lebih dari 5"
         } 
     } else {
