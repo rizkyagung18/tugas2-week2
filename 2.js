@@ -28,4 +28,4 @@ function search(keyword) {
     return data
 }
 
-console.log(searchName("An", 3, search))
+console.log(searchName("an", 3, search))
