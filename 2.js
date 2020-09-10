@@ -7,23 +7,17 @@ const name = [
 ]
 
 function searchName (keyword, limit, callback) {
-    let data = callback(keyword)
+    const data = callback(keyword)
 
-    let hasil = data.map((item,index) => {
-        if(index < limit) {
-            return item
-        }
-    })
+    const hasil = data.filter((item,index) => index < limit )
 
-    return hasil.filter(item => item !== undefined)
+    return hasil
 }
 
 function search(keyword) {
     let data = name.filter(item => {
         let word = item.toLowerCase().search(keyword.toLowerCase())
-        if(word >= 0) {
-            return item
-        }
+        return word >= 0
     })
     return data
 }
