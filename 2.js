@@ -7,7 +7,7 @@ const name = [
 ]
 
 function searchName (keyword, limit, callback) {
-    data = callback(keyword)
+    let data = callback(keyword)
 
     let hasil = data.map((item,index) => {
         if(index < limit) {
