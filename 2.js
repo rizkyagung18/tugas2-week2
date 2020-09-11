@@ -15,8 +15,8 @@ function searchName (keyword, limit, callback) {
 }
 
 function search(keyword) {
-    let data = name.filter(item => {
-        let word = item.toLowerCase().search(keyword.toLowerCase())
+    const data = name.filter(item => {
+        const word = item.toLowerCase().search(keyword.toLowerCase())
         return word >= 0
     })
     return data
